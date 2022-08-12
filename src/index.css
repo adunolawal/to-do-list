@@ -1,0 +1,58 @@
+*{
+ font-family: cursive; 
+}
+body{
+    background-color: cornflowerblue;
+}
+.addInput{
+    padding: 10px;
+    width: 40%;
+    margin-bottom: 1rem;
+}
+.btn{
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: burlywood;
+
+}
+.showBar{
+    background-color: transparent;
+    transition: all 0.3s ease-out;
+    box-shadow: 1px 1px 1px black;
+    width: 90%;
+    border-radius: 3px;
+    padding: 5px;
+    margin: 0.5rem auto;
+    text-align: start;
+    display: flex;  
+}
+.rowCompleted {
+    background-color: cadetblue;
+    width: 90%;
+    border-radius: 3px;
+    padding: 5px;
+    margin: 0.5rem auto;
+    text-align: start;
+    display: flex;  
+    text-decoration: line-through;
+}
+.todo{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 45%;
+    min-height: 400px;
+    background-color: aliceblue;
+    text-align: center;
+    margin: 128px auto;
+    border-radius: 10px;
+    padding-bottom: 32px;
+}
+.icons{
+    margin-left: auto;
+    cursor: pointer;
+}
+.icons span{
+    margin-right: 1rem;
+}
