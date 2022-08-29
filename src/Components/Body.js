@@ -1,5 +1,3 @@
-// import{RiCloseCircleLine} from "react-icons/ri"
-
 const Body = (props) => {
   return (
     <div className={ props.todo.completed ? "rowCompleted": "showBar"}>

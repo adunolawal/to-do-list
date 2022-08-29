@@ -7,6 +7,7 @@ const App = () => {
 
   const [todos, setTodos] = useState([])
 
+  // handles display of added data
   const addTodo = (text) => {
     let id = Math.floor(Math.random()* 1000) + 1
     let todo = {id:id, text:text, completed:false}
@@ -14,11 +15,14 @@ const App = () => {
     console.log(newTodos);
     setTodos(newTodos)
   }
+
+  // handles deleting of data
   const deleteTodo =(id)=>{
     let updatedTodos = [...todos].filter((todo) => todo.id !== id)
     setTodos(updatedTodos)
   } 
 
+  // handles ruling out todo after completion
   const markTodo =(id)=>{
     let updatedTodos = todos.map((todo) => {
       if(todo.id === id){
